@@ -23,11 +23,25 @@
         },
 
         setEvents() {
-            this.form.addEventListener('submit', event => this.formHandler(event));
-            document.addEventListener('DOMContentLoaded', () => this.prefillHandler());
-            this.todoItemContainer.addEventListener('change', event => this.isChecked(event));
-            this.todoItemContainer.addEventListener('click', event => this.removeTodoItem(event));
-            this.form.addEventListener('click', event => this.deleteAllTodoItems(event))
+            this.form.addEventListener(
+                'submit', 
+                event => this.formHandler(event));
+
+            document.addEventListener(
+                'DOMContentLoaded',
+                 () => this.prefillHandler());
+
+            this.todoItemContainer.addEventListener(
+                'change',
+                 event => this.isChecked(event));
+
+            this.todoItemContainer.addEventListener(
+                'click', 
+                event => this.removeTodoItem(event));
+
+            this.form.addEventListener(
+                'click', 
+                event => this.deleteAllTodoItems(event))
         },
 
 
